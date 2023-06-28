@@ -1,0 +1,95 @@
+#city{
+    font-size: 30px;
+    font-weight: 250;
+    line-height: 28px;
+}
+#description{
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.city-date {
+    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 24px;
+    background-color: #b9b9b93a;
+    padding: 15px 20px 20px 20px;
+    margin: 11px 0px;
+    text-transform: capitalize;
+    
+    
+   
+}
+.weatherdate2colmn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 18px;
+}
+#currentDegree{
+    margin-bottom: 4px;
+    padding-top: 4px;
+}
+.date{
+    margin: 0 auto;
+}
+#day{
+    padding-left: 40%;
+}
+.degree-line{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.tempLowHigh {
+    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+    border-radius: 24px;
+    border: 1px solid #a3aab0;
+}
+.tempLowHigh .row{
+    margin: 0px 10px;
+}
+.tempLowHigh .col-5 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
+}
+.tempLowHigh p {
+    margin: 0px;
+}
+.FormDate{
+    text-align: center;
+}
+.Date{
+    padding-bottom: 25px;
+}
+.CF {
+    font-size: 18px;
+}
+.CF p {
+    color: #d3d3d3be;
+    padding-left: 10px;
+    background-color: none;
+    padding-top: 10px;
+    font-weight: bold;
+    text-shadow: 3px -1px rgb(55, 55, 55);
+}
+#CFline {
+    color: rgb(41, 40, 40);
+    text-shadow: none;
+}
+ #celcium:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#farenheit:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.active {
+    text-decoration: underline;
+}
+
+  

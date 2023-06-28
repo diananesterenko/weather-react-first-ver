@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+body{
+   background-image: url(https://phonoteka.org/uploads/posts/2022-01/thumbs/1643268908_60-phonoteka-org-p-pogoda-fon-69.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size:cover;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-app{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0px auto 0px auto;
+    padding: 0px 20px 20px 20px;
+    opacity: 0.9;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 5px; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    color: rgb(209, 209, 209);
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.268);
+    font-size: 32px; 
+    margin-left: 40px; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form1 .row{
+  max-width: 500px;
+    padding-left: 20px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.daterow{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+ 
+}
+.search{
+    background-color: #b0a09b5e;
+    border: 2px solid rgb(185, 185, 185);
+    border-radius: 14px;
+    height: 35px;
+    width: 100%;
+    padding: 0 40px;
+    margin-right: 40px;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/831/original/sound.png?1657298218);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.268);
+}
+.search::placeholder{
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(41, 40, 40); 
+}
+.submit {
+    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+    border: 2px solid rgb(185, 185, 185);
+    background-color: #b0a09b5e;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/039/830/original/search.png?1657298154);
+    background-size: 30%;
+    height: 35px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+  }
+#current {
+    background-image: none;
+    padding-left: 5px;
+    color: rgb(41, 40, 40);
+    cursor: pointer;
+}
+.markersComponent{
+    padding: 00px 0px 0px 10px;
+    width: 40%;
+    margin: 0 auto;
+}
+.daterowinf{
+  width: 60%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.suggestion p{
+    margin: 5px 0px;
+}
+.suggestSubmit {
+    box-shadow: 4px 4px 5px 3px rgba(0, 0, 0, 0.268);
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 12px;
+    background-color: #b9b9b93a;
+    margin-bottom: 20px;
+    height: 70px;
+    background-size: 50%;
+    
+}
+.suggestSubmit .row{
+  display: flex;
+ 
+}
+.rowSuggest{
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.suggestSubmit canvas{
+  padding: 10px ;
+  width: 50px;
+  margin: 0;
+  
+}
+.suggestInf{
+  display: flex;
+  justify-content: end;
+}
+.suggestTemp{
+  padding-top: 10px;
+}
+.suggestInput {
+  
+  margin-left: 5px;
+  padding-left: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.suggestSubmit:hover{
+  border-color: #b9b9b93a;
+  transform: scale(1.1);
+}
+@media (min-width: 994px){
+    .week-forecast .row{
+      margin-left: 20px;
+    }
+}@media (max-width: 920px){
+  
+    .suggestInput {
+      padding: 0px 0px;
+      width: 140%;
+      background: none;
+      border: none;
+    }
+  
+}
+@media (max-width: 700px){
+  .daterowinf{
+    width: 100%;
+  }
+  .daterow{
+    display: unset;
+  }
+  .categories{
+    padding-right: 15px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .markersComponent{
+    padding: 20px 0px 30px 50px;
+    width: 100%;
+}
+}
+@media (max-width: 610px){
+  .daterowinf{
+    width: 100%;
+  }
+
+
+.madrid{
+  display: none;
+}
+.rowSuggest div{
+  width: 22%;
+ 
+}
+.suggestSubmit div{
+  width: 100%;
+}
+}
+@media (max-width: 534px){
+  
+  .paris{
+    display: none;
+  }
+  .rowSuggest div{
+    width: 30%;
+   
+  }
+.suggestSubmit div{
+  width: 100%;
+}
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 444px){
+    .city-date-main .col-1{
+      display: none;
+    }
+    .city-date-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+     
+    }
+    .iconAndDiscr{
+      margin: 0 auto;
+      justify-content: center;
+      text-align: center;
+      width: 200px;
+    }
+    .weatherdate2colmn{
+      margin: 0 auto;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+    .submit{
+      width: 50px;
+    }
 }

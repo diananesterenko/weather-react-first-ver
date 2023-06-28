@@ -1,0 +1,55 @@
+.CF {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.degrees{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#currentDegree{
+    color: rgb(41, 40, 40);
+    font-size: 30px;
+    padding-right: 0;
+    text-align: center;
+    margin: 0px;
+    margin: 0 auto;
+}
+.CF p {
+    color: rgb(41, 40, 40);
+    padding-left: 10px;
+    background-color: none;
+    padding-top: 10px;
+    font-weight: bold;
+    text-shadow: 2px 1px rgb(55, 55, 55);
+}
+.CF a {
+    color: rgb(41, 40, 40);
+    padding-left: 10px;
+    background-color: none;
+    padding-top: 10px;
+    font-weight: bold;
+}
+ #CFline {
+    color: rgb(41, 40, 40);
+    text-shadow: none;
+}
+#celcium:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#farenheit {
+    padding-left: 6px;
+}
+#farenheit:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.active {
+    text-decoration: underline;
+}
